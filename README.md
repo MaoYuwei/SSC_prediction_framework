@@ -2,9 +2,10 @@
 This is the code for [AI for Learning Deformation Behavior of a Material: Predicting Stress-Strain Curves 4000x Faster Than Simulations](https://ieeexplore.ieee.org/abstract/document/10191138)
 
 ## Installation Requirements
-
+The basic requirement for using the files is a Python 3.6.3 environment with PyTorch 2.3.0
 ## Source Files
 ### SSC_prediction
+
 - train.py is the code for MLP model training.
 - autoencoder.py is the code for autoencoder model training.
 - cross_validation.py is the test code for the whole framework.
@@ -14,14 +15,13 @@ This is the code for [AI for Learning Deformation Behavior of a Material: Predic
 ### SSC_predictor
 
 This is the code for the webtool. 
-
-main.py includes the main code for ssc prediction. 
+- main.py includes the main code for ssc prediction. 
 
 ## Running the code
 If you want to predict a stress-strain curve using this framework, please change the parameters (ox and oy) in function `do_prediction` in ssc_pred.py. Then, run `python ssc_pred.py`. The output stress-strain curve file is image.jpg.
 
 ## Developer Team
-The code was developed by Vishu Gupta from the [CUCIS](http://cucis.ece.northwestern.edu/index.html) group at the Electrical and Computer Engineering Department at Northwestern University.
+The code was developed by Yuwei Mao from the [CUCIS](http://cucis.ece.northwestern.edu/index.html) group at the Electrical and Computer Engineering Department at Northwestern University.
 
 ## Publication
 1. Mao, Yuwei, Shahriyar Keshavarz, Vishu Gupta, Andrew CE Reid, Wei-keng Liao, Alok Choudhary, and Ankit Agrawal. "Ai for learning deformation behavior of a material: predicting stress-strain curves 4000x faster than simulations." In 2023 International Joint Conference on Neural Networks (IJCNN), pp. 1-8. IEEE, 2023.[PDF](https://ieeexplore.ieee.org/abstract/document/10191138)
